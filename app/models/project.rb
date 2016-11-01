@@ -6,6 +6,7 @@ class Project < ActiveRecord::Base
   validates :name, :summary, presence: true, length: { minimum: 3 }
   validate :start_date_cannot_be_in_the_past
   validate :end_date_cannot_be_in_the_past
+  validate :end_date_not_before_start_date
 
   def start_date_cannot_be_in_the_past
     if start_date.present? && start_date < Date.today
@@ -16,6 +17,12 @@ class Project < ActiveRecord::Base
   def end_date_cannot_be_in_the_past
     if end_date.present? && end_date < Date.today
       errors.add(:end_date, "can't be in the past")
+    end
+  end
+
+  def end_date_not_before_start_date
+    if start_date.present? && end_date.present? && start_date < end_date
+      errors.add(:start_date, "can't be in the past")
     end
   end
 end
