@@ -1,6 +1,7 @@
 class Task < ActiveRecord::Base
   belongs_to :project
   belongs_to :user
+  validates :title, :content, :status, presence: true, length: { minimum: 3 }
   validate :start_date_cannot_be_in_the_past,
              due_date_cannot_be_in_the_past
 
