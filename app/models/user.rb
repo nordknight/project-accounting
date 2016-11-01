@@ -1,6 +1,16 @@
+class EmailValidator < ActiveModel::EachValidator
+  def validate_each(record, attribute, value)
+    unless value =~ /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\z/i
+      record.errors[attribute] << (options[:message] || "is not an email")
+    end
+  end
+end
+
 class User < ActiveRecord::Base
-  belongs_to: team
+  #belongs_to: team
   has_many :tasks
   has_many :posts
   has_many :comments
+  validates :first_name, :last_name,  presence: true, length: { minimum: 3 }
+  validates :email, presence: true, email: true
 end
