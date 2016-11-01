@@ -2,5 +2,8 @@
 <h1>Greetings! =)</h1>
 <p>
   This is the home page for the RoR application maded by Nord according tutorial on <a href="http://railstutorial.org/">Ruby on Rails Tutorial</a>.
-  <%= link_to 'Projects', controller: 'projects' %>
+  <table>
+    <tr><td>Available projects</td><td><%= link_to 'Projects', controller: 'projects' %></td></tr>
+    <tr><td>Registrated teams</td><td><%= link_to 'Teams', controller: 'teams' %></td></tr>
+    <tr><td>All users</td><td><%= link_to 'Users', controller: 'users' %></td></tr>
 </p>
