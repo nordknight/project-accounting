@@ -21,8 +21,8 @@ class Project < ActiveRecord::Base
   end
 
   def end_date_not_before_start_date
-    if start_date.present? && end_date.present? && start_date < end_date
-      errors.add(:start_date, "can't be in the past")
+    if start_date.present? && end_date.present? && start_date > end_date
+      errors.add(:start_date, "can't be after", :end_date)
     end
   end
 end
