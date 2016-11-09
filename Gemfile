@@ -6,20 +6,20 @@ gem 'rails', '4.2.4'
 # Use SCSS for stylesheets
 gem 'sass-rails', '4.0.3'
 # Use Uglifier as compressor for JavaScript assets
-gem 'uglifier', '2.1.1'
+
 # Use CoffeeScript for .coffee assets and views
-gem 'coffee-rails', '4.0.1'
+
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
 # Use jquery as the JavaScript library
-gem 'jquery-rails', '3.0.4'
+gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
-gem 'turbolinks', '~> 2.3.0'
+gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder', '1.0.2'
+gem 'jbuilder'
 # bundle exec rake doc:rails generates the API under doc/api.
-gem 'sdoc', '0.3.20', group: :doc
+gem 'sdoc', group: :doc
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -36,6 +36,8 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'minitest'
   gem 'test-unit'
+  gem 'uglifier'
+  gem 'coffee-rails'
   gem 'database_cleaner'
   # BootStrap
   gem 'bootstrap-sass', '~> 3.2.0'
@@ -48,7 +50,7 @@ end
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
-  gem 'web-console', '~> 2.0'
+  gem 'web-console'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
