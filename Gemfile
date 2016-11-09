@@ -43,6 +43,7 @@ group :development, :test do
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3'
   gem 'capybara'
+  gem 'guard-rspec'
 end
 
 group :development do
