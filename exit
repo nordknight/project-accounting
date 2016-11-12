@@ -1,0 +1,114 @@
+[33mcommit 070bb839344b04d41ac185a7d3a91d0c638a6e1e[m
+Author: nordknight@gmail.com <nordknight@gmail.com>
+Date:   Wed Nov 9 22:46:30 2016 +0300
+
+    First commit on Linux
+
+[33mcommit 178958dc97202c1d36b600f2267da76d2d7f60ba[m
+Author: Alexey L. Pokaluk <nordknight@gmail.com>
+Date:   Wed Nov 9 12:56:37 2016 +0300
+
+    Deleting and Bootstrap
+    
+    Deleting model Model and some more design
+
+[33mcommit 5d1b1c8caeb36b5b9171e1f24b1c9bb82ccaa852[m
+Author: Alexey L. Pokaluk <nordknight@gmail.com>
+Date:   Wed Nov 9 12:29:53 2016 +0300
+
+    More Bootstrap style
+    
+    Adding style to main index's pages and homepage
+
+[33mcommit 432b98392a9de2a2c7d343d89adf48ed4cd0b313[m
+Author: Alexey L. Pokaluk <nordknight@gmail.com>
+Date:   Wed Nov 9 11:46:50 2016 +0300
+
+    Guard , design
+    
+    Adding Guard - autorun all test
+    Improve bootstrap design
+
+[33mcommit 7bef8f387cc31212a706590bf7afba2b1ca0b255[m
+Author: Alexey L. Pokaluk <nordknight@gmail.com>
+Date:   Wed Nov 9 11:00:52 2016 +0300
+
+    Tests
+    
+    Rspec tests now running
+
+[33mcommit c7235b799851c4f5453fdf414372542ead6d0a95[m
+Author: Alexey L. Pokaluk <nordknight@gmail.com>
+Date:   Tue Nov 8 23:41:44 2016 +0300
+
+    Bootstrap, fixing bugs
+    
+    Adding bootstrap, fix nodejs bug
+
+[33mcommit 559f30ae20f40b9bd1641c1f67fc67af518b31ed[m
+Author: Alexey L. Pokaluk <nordknight@gmail.com>
+Date:   Tue Nov 1 20:53:58 2016 +0300
+
+    Fix error
+    
+    Fix error in project model
+
+[33mcommit dcfd4218c00e267519a5d79bf6d68d9f4777ab56[m
+Author: Alexey L. Pokaluk <nordknight@gmail.com>
+Date:   Tue Nov 1 20:28:25 2016 +0300
+
+    Fix errors
+    
+    Disable unusable features
+
+[33mcommit 6714865688248179562ed442979259dca224a1a8[m
+Author: Alexey L. Pokaluk <nordknight@gmail.com>
+Date:   Tue Nov 1 20:14:46 2016 +0300
+
+    Bug fixes
+    
+    Fix some bugs with tests Rspec
+
+[33mcommit 23ad3b89d0b8b155ce880c2c6d8add22aa30f092[m
+Author: Alexey L. Pokaluk <nordknight@gmail.com>
+Date:   Tue Nov 1 19:50:55 2016 +0300
+
+    Links
+    
+    Adding few links
+
+[33mcommit cd869894fbd66edf1f348b611d9959edf589f48d[m
+Author: Alexey L. Pokaluk <nordknight@gmail.com>
+Date:   Tue Nov 1 19:23:16 2016 +0300
+
+    Few changes
+    
+    Adding email validation and date validation
+
+[33mcommit 7fe20bf72dde57034edb517621d3d809168ac691[m
+Author: Alexey L. Pokaluk <nordknight@gmail.com>
+Date:   Tue Nov 1 18:38:59 2016 +0300
+
+    Few changes
+    
+    Add validation. Little fixes in welcome views.
+
+[33mcommit f471538e8a231989e94db3a7f99a526036a6b8c7[m
+Author: Alexey L. Pokaluk <nordknight@gmail.com>
+Date:   Tue Nov 1 18:04:01 2016 +0300
+
+    Few changes
+    
+    Adding cross pages links.
+
+[33mcommit 886c323d52ce994bf1d1ecdc617dc3b65fd1e4ce[m
+Author: Alexey L. Pokaluk <nordknight@gmail.com>
+Date:   Tue Nov 1 16:56:18 2016 +0300
+
+    Adding some links
+
+[33mcommit e242e12c23511111bff014cffd6bbf078c032928[m
+Author: Alexey L. Pokaluk <nordknight@gmail.com>
+Date:   Tue Nov 1 01:26:17 2016 +0300
+
+    Adding Rspec

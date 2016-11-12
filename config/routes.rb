@@ -5,6 +5,8 @@ Rails.application.routes.draw do
   get "welcome/about"
   root 'welcome#home'
 
+  match '/signup',  to: 'users#new',            via: 'get'
+
   resources :comments
   resources :posts
   resources :tasks
