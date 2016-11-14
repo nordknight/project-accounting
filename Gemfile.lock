@@ -68,6 +68,12 @@ GEM
     coffee-script-source (1.10.0)
     database_cleaner (1.5.3)
     debug_inspector (0.0.2)
+    devise (4.2.0)
+      bcrypt (~> 3.0)
+      orm_adapter (~> 0.1)
+      railties (>= 4.1.0, < 5.1)
+      responders
+      warden (~> 1.2.3)
     diff-lcs (1.2.5)
     erubis (2.7.0)
     execjs (2.7.0)
@@ -76,6 +82,7 @@ GEM
     factory_girl_rails (4.7.0)
       factory_girl (~> 4.7.0)
       railties (>= 3.0.0)
+    ffaker (2.3.0)
     ffi (1.9.14)
     ffi (1.9.14-x64-mingw32)
     formatador (0.2.5)
@@ -129,6 +136,7 @@ GEM
     notiffany (0.1.1)
       nenv (~> 0.1)
       shellany (~> 0.0)
+    orm_adapter (0.5.0)
     power_assert (0.3.1)
     pry (0.10.4)
       coderay (~> 1.1.0)
@@ -167,6 +175,8 @@ GEM
     rb-inotify (0.9.7)
       ffi (>= 0.5.0)
     rdoc (4.3.0)
+    responders (2.3.0)
+      railties (>= 4.2.0, < 5.1)
     rspec (3.5.0)
       rspec-core (~> 3.5.0)
       rspec-expectations (~> 3.5.0)
@@ -225,6 +235,8 @@ GEM
       tzinfo (>= 1.0.0)
     uglifier (3.0.3)
       execjs (>= 0.3.0, < 3)
+    warden (1.2.6)
+      rack (>= 1.0)
     web-console (3.3.0)
       activemodel (>= 4.2)
       debug_inspector
@@ -244,7 +256,9 @@ DEPENDENCIES
   capybara
   coffee-rails
   database_cleaner
+  devise
   factory_girl_rails
+  ffaker
   guard-rspec
   jbuilder
   jquery-rails
