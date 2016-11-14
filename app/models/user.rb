@@ -12,7 +12,7 @@ class User < ActiveRecord::Base
   has_many :tasks
   has_many :posts
   has_many :comments
-  validates :first_name, :last_name,  presence: true, length: { minimum: 3 }, length: { maximum: 50 }
+  validates :first_name, :last_name,  presence: true, length: { minimum: 3, maximum: 50 }
   validates :email, presence: true, email: true, uniqueness: true
   # has_secure_password
 end

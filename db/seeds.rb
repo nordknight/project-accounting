@@ -11,6 +11,6 @@
 #10.times do
 #  Factory.create :user
 #end
-5.times do |i|
-  User.create( email: "test##{i}@test.by", password: "password", first_name: "User ##{i}",last_name: "Last name ##{i}", admin: false)
+300.times do |i|
+  User.create( email: "test#{i}@test.by", password: "password", first_name: "User#{i}",last_name: "Last name #{i}", admin: false)
 end
