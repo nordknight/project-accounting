@@ -1,8 +1,8 @@
 class Project < ActiveRecord::Base
   #belongs_to: team
-  has_many :tasks
-  has_many :posts
-  has_many :teams
+  #has_many :tasks
+  #has_many :posts
+  #has_many :teams
   validates :name, :summary, presence: true, length: { minimum: 3 }
   validate :start_date_cannot_be_in_the_past
   validate :end_date_cannot_be_in_the_past

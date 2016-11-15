@@ -22,6 +22,10 @@ gem 'jbuilder'
 gem 'sdoc', group: :doc
 # 
 gem 'devise'
+gem 'factory_girl'
+gem 'factory_girl_rails'
+gem 'ffaker'
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -36,8 +40,7 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
   gem 'bcrypt-ruby'
-  gem 'factory_girl_rails', :require => false
-  gem 'ffaker'
+
   gem 'rspec-rails'
   gem 'minitest'
   gem 'test-unit'

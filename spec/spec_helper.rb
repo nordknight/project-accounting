@@ -3,6 +3,8 @@ ENV["RAILS_ENV"] ||= 'test'
 require File.expand_path("../../config/environment", __FILE__)
 require 'rspec/rails'
 require 'factory_girl_rails'
+
+require 'ffaker'
 #require 'rspec/autorun'
 
 # Requires supporting ruby files with custom matchers and macros, etc,
@@ -42,4 +44,7 @@ RSpec.configure do |config|
   config.order = "random"
   config.include Capybara::DSL
   config.include FactoryGirl::Syntax::Methods
+  
+ 
+
 end
