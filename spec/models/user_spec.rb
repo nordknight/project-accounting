@@ -2,11 +2,14 @@ require 'spec_helper'
 
 describe User do
 
-  subject { create(:user)}
+  before { @user = User.new(email: "user@example.com", password: "Example Password", first_name: "Example First Name", last_name: "Example Last Name", admin: false ) }
 
-  its(:email) { should == 'test@test.by'}
-  its(:password) { should == 'password'}
-  its(:first_name) { should == 'John'}
-  its(:last_name) { should == 'Smith'}
-  it { should_not be_admin}
+  subject { @user }
+
+  
+  it { should respond_to(:email) }
+  it { should respond_to(:password) }
+  it { should respond_to(:first_name) }
+  it { should respond_to(:last_name) }
+  it { should respond_to(:admin) }  
 end
