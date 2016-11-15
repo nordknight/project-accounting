@@ -10,7 +10,8 @@ end
 FactoryGirl.define do
   factory :user do
   	email { unique_email }
-  	password {FFaker::Internet.password}
+    password "password"
+    password_confirmation "password"
   	first_name {FFaker::Name.first_name}
   	last_name {FFaker::Name.last_name}
   	admin false

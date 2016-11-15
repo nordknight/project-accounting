@@ -1,6 +1,11 @@
 <p id="notice"><%= notice %></p>
 
 <p>
+  <strong>Gravatar:</strong>
+  <%= gravatar_for @user %>
+</p>
+
+<p>
   <strong>Email:</strong>
   <%= @user.email %>
 </p>
