@@ -14,6 +14,7 @@ class User < ActiveRecord::Base
   has_many :comments
   validates :first_name, :last_name,  presence: true, length: { minimum: 1, maximum: 200 }
   validates :email, presence: true, email: true, uniqueness: true
-  validates :password, length: { minimum: 6 }
-  has_secure_password
+  validates :password, length: { minimum: 6 }, confirmation: true
+  has_secure_password 
+
 end

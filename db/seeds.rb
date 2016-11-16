@@ -11,7 +11,7 @@
 #
 #require 'support/factory_girl'
 
-10.times do
+300.times do
   FactoryGirl.create :user
   FactoryGirl.create :post
   FactoryGirl.create :project
