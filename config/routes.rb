@@ -1,13 +1,14 @@
 Rails.application.routes.draw do
-  resources :comments
-  resources :comments
-  resources :models
+  
+  root 'welcome#home'
+  
   get 'welcome/home'
   get 'welcome/help'
   get "welcome/about"
-  root 'welcome#home'
-
+  
   match '/signup',  to: 'users#new',            via: 'get'
+  match '/signin',  to: 'sessions#new',         via: 'get'
+  match '/signout', to: 'sessions#destroy',     via: 'delete'
 
   resources :comments
   resources :posts
@@ -15,6 +16,7 @@ Rails.application.routes.draw do
   resources :users
   resources :teams
   resources :projects
+  resources :sessions, only: [:new, :create, :destroy]
     
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
