@@ -40,7 +40,7 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
   gem 'bcrypt-ruby'
-
+  gem 'cucumber-rails'
   gem 'rspec-rails'
   gem 'minitest'
   gem 'test-unit'
