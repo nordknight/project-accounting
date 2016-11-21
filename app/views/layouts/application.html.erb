@@ -47,7 +47,7 @@
           <% else %>
             <li><a href="/signin"><span class="glyphicon glyphicon-log-in"></span> Log In</a></li>
             <li><%= link_to "Sign up", signup_path %></li>
-          <% end %>
+        <% end %>
       </ul>      
     </div>
   </div>
@@ -61,11 +61,13 @@
   <div class="row content">
     <div class="col-sm-2 sidenav">
       <ul class="nav pull-left">
-        <li ><%= link_to 'Projects', controller: 'projects' %></li>
-        <li><%= link_to 'Teams', controller: 'teams' %></li>
-        <li><%= link_to 'Users', controller: 'users' %></li>
-        <li><%= link_to 'Tasks', controller: 'tasks' %></li>
-        <li><%= link_to 'Posts', controller: 'posts' %></li>
+        <% if signed_in? %>
+          <li ><%= link_to 'Projects', controller: 'projects' %></li>
+          <li><%= link_to 'Teams', controller: 'teams' %></li>
+          <li><%= link_to 'Users', controller: 'users' %></li>
+          <li><%= link_to 'Tasks', controller: 'tasks' %></li>
+          <li><%= link_to 'Posts', controller: 'posts' %></li>
+        <% end %>
       </ul>
     </div>
     <div class="col-sm-8 text-left">
