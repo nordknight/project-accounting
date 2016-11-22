@@ -20,6 +20,7 @@
 end
 
 FactoryGirl.create :admin
+
 ############################
 
 #3.times do |i|
