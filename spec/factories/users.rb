@@ -15,6 +15,9 @@ FactoryGirl.define do
   	first_name {FFaker::Name.first_name}
   	last_name {FFaker::Name.last_name}
   	factory :admin do
+      email "admin@test.by"
+      password "admin"
+      password_confirmation "admin"
       admin true
     end
   end
