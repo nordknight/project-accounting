@@ -26,3 +26,20 @@ Things you may want to cover:
 
 Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
+
+Developed on Linux Ubuntu 16.04
+
+Ruby 
+ruby 2.3.1p112 (2016-04-26) [x86_64-linux-gnu]
+
+Rails 
+4.2.4
+
+sqlite3 
+3.11.0 2016-02-15
+
+Database(in Ubuntu 16.04): use command 'rake db:reset' to create database and filling with fake users and other content.
+
+Default Administrator user:
+email:    admin@test.by
+password: admin
