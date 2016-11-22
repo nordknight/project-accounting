@@ -1,6 +1,6 @@
 FactoryGirl.define do
   factory :comment do
-    content "MyString"
-    user_id 1
+  	content {FFaker::Lorem.sentence}
+  	post_id {rand(1..40)}
   end
 end

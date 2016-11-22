@@ -11,8 +11,9 @@
 #
 #require 'support/factory_girl'
 
-10.times do
+40.times do
   FactoryGirl.create :user  
+  FactoryGirl.create :comment
   FactoryGirl.create :post
   FactoryGirl.create :project
   FactoryGirl.create :task

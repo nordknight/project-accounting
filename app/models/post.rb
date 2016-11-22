@@ -1,6 +1,6 @@
 class Post < ActiveRecord::Base
-  has_many :comments
+  has_many :comments, dependent: :destroy
   #belongs_to :user
   #belongs_to :project
-  validates:content, length: { maximum: 140}
+  validates:content, presence: true, length: { maximum: 140}
 end
