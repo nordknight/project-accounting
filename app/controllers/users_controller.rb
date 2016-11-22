@@ -34,7 +34,7 @@ class UsersController < ApplicationController
     respond_to do |format|
       if @user.save
         sign_in @user
-        flash[:success] = "Sign up success! Welcome #{@user.first_name} #{@user.last_name} to Project's Accounting!"
+        flash[:success] = "Welcome #{@user.first_name} #{@user.last_name}!"
         format.html { redirect_to @user}
         format.json { render :show, status: :created, location: @user }
       else
@@ -65,9 +65,9 @@ class UsersController < ApplicationController
   
   def destroy
     @user.destroy
-    flash[:success] = "User deleted."
+    flash[:success] = "User #{@user.email} deleted."
     respond_to do |format|
-      format.html { redirect_to users_url, notice: "User #{@user.email} was successfully deleted." }
+      format.html { redirect_to users_url}
       format.json { head :no_content }
     end
   end

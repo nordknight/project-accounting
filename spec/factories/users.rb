@@ -14,6 +14,8 @@ FactoryGirl.define do
     password_confirmation "password"
   	first_name {FFaker::Name.first_name}
   	last_name {FFaker::Name.last_name}
-  	admin false
+  	factory :admin do
+      admin true
+    end
   end
 end

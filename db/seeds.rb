@@ -11,13 +11,15 @@
 #
 #require 'support/factory_girl'
 
-300.times do
-  FactoryGirl.create :user
+10.times do
+  FactoryGirl.create :user  
   FactoryGirl.create :post
   FactoryGirl.create :project
   FactoryGirl.create :task
   FactoryGirl.create :team
 end
+
+FactoryGirl.create :admin
 ############################
 
 #3.times do |i|

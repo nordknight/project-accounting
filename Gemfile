@@ -40,7 +40,6 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
   gem 'bcrypt-ruby'
-  gem 'cucumber-rails'
   gem 'rspec-rails'
   gem 'minitest'
   gem 'test-unit'
@@ -61,6 +60,10 @@ group :development do
   gem 'web-console'
 end
 
+group :test do
+  # Access an IRB console on exception pages or by using <%= console %> in views
+  gem 'cucumber-rails', :require => false
+end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
